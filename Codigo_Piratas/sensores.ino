@@ -9,9 +9,11 @@ void checkGaveta(){
       }
       if(abriuGaveta) {
         
-        abrirGaveta();
-        delay(1000);
+        //abrirGaveta();
+        //delay(1000);
         client.publish("topicoArduinoProntoP","3");
+        delay(500);
+        abrirGaveta();
         //Serial.println("abriugaveta");
   
         
@@ -66,6 +68,7 @@ void checkBau(){
         
        // Serial.println("checkTimaoS");
        client.publish("topicoArduinoProntoP","5");
+       startSensorBau = false;
         /*
         desligarLuzConves();
         desligarLuzCapitao();

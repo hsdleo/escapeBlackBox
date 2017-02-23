@@ -91,17 +91,17 @@ void  desligarLed(int led){
 
 
 void funcaoAcaoBau(){
-        if(!acaoBau){
+        //if(!acaoBau){
         desligarLuzConves();
         ligarLuzBau();
         efeitoTrovao2();
-        delay(7998);
+        delay(12000);
         desligarLuzBau();
         ligarLuzConves();
         startSensorTimao = true;
         startSensorBau = false;
-        }
-        acaoBau = true;
+        //}
+       // acaoBau = true;
   
 }
 
